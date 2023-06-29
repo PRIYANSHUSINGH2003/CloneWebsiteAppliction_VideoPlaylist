@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone the website / Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <section>
+            <!-- <h2 class="title">Clone website Application</h2> -->
+            <div class="container hide">
+                    <div class="playlistBx playbox">
+                            <ul class="playlist" id="playlist">
+                                <div class="header">
+                                    <div class="head">MENU</div>
+                                    <h2 class="title">Clone website Application</h2>
+                                </div>
+                                <ul id="playlist1">
+
+                                </ul>
+                            </ul>
+                    
+                    
+                </div>
+                <div id="video_player" class="video-section">
+                    <nav>
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn left1 left">
+                            <i class="fas fa-bars icon"></i>
+                        </label>
+                    </nav>
+                    <div class="paused video-container"data-volume-level="high">
+                        <video controls id="main-Video" class="main-video video" src="" autoplay></video>
+                        <div class="video-controls-container">
+                            <div class="timeline-container">
+                                <div class="timeline">
+                                    <div class="thumb-indicator"></div>
+                                </div>
+                            </div>
+                            <div class="controls">
+                                <button class="play-pause-btn">
+                                    <i class="fa-solid fa-play play-icon"></i>
+                                    <i class="fa-solid fa-pause pause-icon"></i>
+                                </button>
+                                <div class="volume-container">
+                                    <button class="mute-btn">
+                                        <i class="fa-solid fa-volume-high" id="volume-high-icon"></i>
+                                        <i class="fa-solid fa-volume-low"id="volume-low-icon"></i>
+                                        <i class="fa-solid fa-volume-xmark" id="volume-muted-icon"></i>
+                                    </button>
+                                    <input class="volume-slider" type="range" min="0" max="1" step="any" value="1">
+                                </div>
+                                <button class="skip-repeat"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+                                <button class="full-screen-btn">
+                                    <i class="fa-solid fa-expand open"></i>
+                                    <i class="fa-solid fa-minimize close"></i>
+                                </button>
+                                <div class="next-button-container">
+                                    <a class="previous"><i class="fa-solid fa-backward"></i></i> Prev</a>
+                                    <a class="next">Next <i class="fa-sharp fa-solid fa-forward"></i></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./video-list.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
